@@ -10,8 +10,8 @@ grid-size: grid-xl
 github:
   note: false
   link: true
-  tree: 'https://github.com/yunohost/doc/blob/master/'
-  commits: 'https://github.com/yunohost/doc/commits/master/'
+  tree: 'https://github.com/orhtej2/doc/blob/grav-editing/'
+  commits: 'https://github.com/orhtej2/doc/commits/grav-editing/'
 spectre:
   exp: false
   icons: false
