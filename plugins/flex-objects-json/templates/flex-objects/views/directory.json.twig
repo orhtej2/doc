@@ -1,0 +1,8 @@
+{% set flex = grav.get('flex_objects') %}
+{% set directory = flex.directory(type) %}
+
+{% if directory %}
+    {"objects":{{ json_encode(directory.collection)|raw }}}
+{% else %}
+    {% include 'flex-objects/views/404.json.twig' %}
+{% endif %}

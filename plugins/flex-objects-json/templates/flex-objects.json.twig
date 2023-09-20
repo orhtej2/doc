@@ -1,0 +1,8 @@
+{% spaceless %}
+    {% set options = page.header.flex %}
+    {% set page_assets = page.header.assets %}
+    {% set type = options.directory ?? page.header.directory ?? uri.param('directory') %}
+    {% set id = options.id ?? uri.param('id') %}
+
+    {{ include('flex-objects/page.json.twig') }}
+{% endspaceless %}
