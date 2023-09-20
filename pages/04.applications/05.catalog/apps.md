@@ -23,7 +23,7 @@ This page requires JavaScript enabled to display properly :s.
 
 ! Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
 
-{% set catalog = read_file('/var/www/app_yunohost/apps/builds/default/doc_catalog/apps.json')|json_decode(true) %}
+{% set catalog = read_file('/var/www/grav/user/data/apps.json')|json_decode(true) %}
 
 <div id="app-cards-list" class="app-cards-list">
 {% for app_id, infos in catalog.apps %}
